@@ -1,0 +1,42 @@
+spk-ahp-perumahan/
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   │   ├── Admin/
+│   │   │   │   ├── KriteriaController.php
+│   │   │   │   ├── AlternatifController.php
+│   │   │   │   └── PerbandinganController.php
+│   │   │   ├── AhpController.php
+│   │   │   └── UserController.php
+│   │   └── Middleware/RoleMiddleware.php
+│   ├── Models/
+│   │   ├── Kriteria.php
+│   │   ├── Alternatif.php
+│   │   ├── PerbandinganKriteria.php
+│   │   ├── PerbandinganAlternatif.php
+│   │   └── HasilAhp.php
+│
+├── database/
+│   ├── migrations/
+│   ├── seeders/
+│   │   └── KriteriaSeeder.php
+│
+├── public/
+│   └── assets/
+│       └── css, js, images
+│
+├── resources/
+│   ├── views/
+│   │   ├── layouts/
+│   │   │   └── app.blade.php
+│   │   ├── admin/
+│   │   │   ├── kriteria.blade.php
+│   │   │   ├── alternatif.blade.php
+│   │   │   ├── perbandingan.blade.php
+│   │   ├── user/
+│   │   │   ├── form.blade.php
+│   │   │   └── hasil.blade.php
+│   │   └── dashboard.blade.php
+│
+└── routes/
+    └── web.php
