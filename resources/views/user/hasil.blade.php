@@ -120,19 +120,6 @@
                 {{ $keterangan[$bestNama] }}
             </p>
 
-            <!-- Detail -->
-            <div class="mt-8 flex flex-wrap gap-4 text-sm">
-
-                <div class="bg-white/10 px-4 py-3 rounded-2xl backdrop-blur-sm border border-white/10">
-                    💰 Harga:
-                    <b>Rp {{ number_format($bestAlt->harga, 0, ',', '.') }}</b>
-                </div>
-
-                <div class="bg-white/10 px-4 py-3 rounded-2xl backdrop-blur-sm border border-white/10">
-                    📍 {{ $bestAlt->alamat }}
-                </div>
-
-            </div>
 
         </div>
     </div>
@@ -316,30 +303,7 @@
 
                                 <div class="space-y-4 text-slate-600">
 
-                                    <div class="flex items-start gap-3">
-                                        <i data-lucide="wallet" class="w-5 h-5 text-blue-600"></i>
-
-                                        <div>
-                                            <p class="text-sm text-slate-400">Harga</p>
-
-                                            <p class="font-semibold">
-                                                Rp {{ number_format($alt->harga, 0, ',', '.') }}
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex items-start gap-3">
-                                        <i data-lucide="map-pin" class="w-5 h-5 text-blue-600"></i>
-
-                                        <div>
-                                            <p class="text-sm text-slate-400">Alamat</p>
-
-                                            <p class="font-semibold">
-                                                {{ $alt->alamat }}
-                                            </p>
-                                        </div>
-                                    </div>
-
+                
                                     <div class="pt-4 border-t border-slate-100">
 
                                         <p class="text-sm text-slate-400 mb-2">
